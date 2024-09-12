@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #fff;
+    color: #333;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-left {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav .menu li {
+    margin-left: 1rem;
+}
+
+nav .menu a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav .menu a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem 0;
+}
+
+h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#next-trip {
+    background-color: #fff;
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 80%;
+    position: relative;
+}
+
+.trip-image-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.trip-image-container img {
+    position: absolute;
+    top: 0;
+    left: -10%; /* Overlap the section background */
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.more-info {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.more-info:hover {
+    background-color: #555;
+}
+
+.full-width-section {
+    background-color: #dfe6d8; /* Light olive green */
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.past-trips-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.trip {
+    width: 30%;
+    margin-bottom: 1rem;
+}
+
+.trip img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.adventure-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.white-background {
+    background-color: #fff;
+}
+
+.testimonials-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #ddd;
+}

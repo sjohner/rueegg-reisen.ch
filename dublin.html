@@ -5,72 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dublin Trip - Rüegg Reisen</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <nav>
         <div class="container">
             <div class="nav-left">
                 <img src="images/logo.png" alt="Rüegg Reisen Logo" class="logo">
-                <h1>Rüegg Reisen</h1>
+                <h2 data-lang="en">Rüegg Reisen</h2>
+                <h2 data-lang="de" style="display: none;">Rüegg Reisen</h2>
+                <ul class="menu">
+                    <li><a href="#next-trip" data-lang="en">Next Trip</a><a href="#next-trip" data-lang="de" style="display: none;">Nächste Reise</a></li>
+                    <li><a href="#past-trips" data-lang="en">Past Trips</a><a href="#past-trips" data-lang="de" style="display: none;">Vergangene Reisen</a></li>
+                    <li><a href="#testimonials" data-lang="en">Testimonials</a><a href="#testimonials" data-lang="de" style="display: none;">Erfahrungsberichte</a></li>
+                </ul>
             </div>
+        </div>
+    </nav>
+    <nav class="sub-menu">
+        <div class="container">
             <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#summary">Summary</a></li>
-                <li><a href="#beer-culture">Beer Culture</a></li>
-                <li><a href="#hurling">Hurling</a></li>
-                <li><a href="#weather">Weather</a></li>
-                <li><a href="#documents">Documents</a></li>
-                <li><a href="#flights">Flights</a></li>
-                <li><a href="#accommodation">Accommodation</a></li>
-                <li><a href="#money">Money</a></li>
+                <li><a href="#summary" data-lang="en">About Dublin</a><a href="#summary" data-lang="de" style="display: none;">Über Dublin</a></li>
+                <li><a href="#beer-culture" data-lang="en">Beer Culture</a><a href="#beer-culture" data-lang="de" style="display: none;">Bierkultur</a></li>
+                <li><a href="#hurling" data-lang="en">Hurling</a><a href="#hurling" data-lang="de" style="display: none;">Hurling</a></li>
+                <li><a href="#weather" data-lang="en">Weather</a><a href="#weather" data-lang="de" style="display: none;">Wetter</a></li>
+                <li><a href="#flights" data-lang="en">Getting there</a><a href="#flights" data-lang="de" style="display: none;">Anreise</a></li>
+                <li><a href="#accommodation" data-lang="en">Accommodation</a><a href="#accommodation" data-lang="de" style="display: none;">Unterkunft</a></li>
+                <li><a href="#money" data-lang="en">Money</a><a href="#money" data-lang="de" style="display: none;">Kohle</a></li>
             </ul>
         </div>
     </nav>
     <main>
         <section id="summary" class="container">
-            <h2>Summary</h2>
-            <p>Dublin, the capital of Ireland, is a vibrant city known for its rich history, friendly locals, and lively culture. Situated on the east coast, Dublin offers a mix of historic landmarks, modern attractions, and a bustling social scene. Visitors are drawn to its charming streets, iconic pubs, and cultural institutions.</p>
+            <h2 data-lang="en">Summary</h2>
+            <h2 data-lang="de" style="display: none;">Zusammenfassung</h2>
+            <p data-lang="en">Dublin, the capital of Ireland, has a rich history dating back over 1,000 years. Originally a Viking settlement known as Dyflin, it evolved into a bustling medieval city. The name “Dublin” comes from the Irish “Dubh Linn,” meaning “black pool.” Over the centuries, Dublin has been a center of culture, education, and industry. Today, it’s known for its vibrant arts scene, historic landmarks, and friendly locals.</p>
+            <p data-lang="de" style="display: none;">Dublin, die Hauptstadt Irlands, hat eine reiche Geschichte, die über 1.000 Jahre zurückreicht. Ursprünglich eine Wikingersiedlung namens Dyflin, entwickelte es sich zu einer geschäftigen mittelalterlichen Stadt. Der Name „Dublin“ stammt vom irischen „Dubh Linn“, was „schwarzer Pool“ bedeutet. Im Laufe der Jahrhunderte war Dublin ein Zentrum für Kultur, Bildung und Industrie. Heute ist es bekannt für seine lebendige Kunstszene, historische Wahrzeichen und freundliche Einheimische.</p>
             <img src="images/dublin-city.jpg" alt="Dublin City">
         </section>
         <section id="beer-culture" class="container">
-            <h2>Beer Culture</h2>
-            <p>Dublin's beer culture is legendary, with the city being home to the world-famous Guinness brewery. Visitors can explore traditional pubs, craft beer bars, and brewery tours. Key places to visit include the Guinness Storehouse, The Bernard Shaw, and The Glimmer Man.</p>
-            <img src="images/guinness.jpg" alt="Guinness Storehouse">
+            <h2 data-lang="en">Beer Culture</h2>
+            <h2 data-lang="de" style="display: none;">Bierkultur</h2>
+            <p data-lang="en">Dublin's beer culture is legendary, with the city being home to the world-famous Guinness brewery. Visitors can explore traditional pubs, craft beer bars, and brewery tours. Key places to visit include the Guinness Storehouse, The Bernard Shaw, and The Glimmer Man.</p>
+            <p data-lang="de" style="display: none;">Dublins Bierkultur ist legendär, da die Stadt die weltberühmte Guinness-Brauerei beeherbergt. Besucher können traditionelle Pubs, Craft-Bier-Bars und Brauereiführungen erkunden. Wichtige Orte, die man besuchen sollte, sind das Guinness Storehouse, The Bernard Shaw und The Glimmer Man.</p>
+            <p data-lang="en">A joint tour of the Guinness Brewery including tasting of the local beer is planned for Sunday 13:00.</p>
+            <p data-lang="de" style="display: none;">Eine gemeinsame Besichtigung der Guiness Brauerei inkl. Verköstigung des lokalen Bieres ist für Sonntag 13:00 Uhr geplant.</p>
+            <img max-width="300px" src="images/guinness_group.jpg" alt="Guinness Storehouse">
         </section>
         <section id="hurling" class="container">
-            <h2>Hurling</h2>
-            <p>Hurling is a traditional Irish sport with a rich history. During our trip, we will attend a hurling game at Parnell Park on Saturday at 15:30. This is a fantastic opportunity to experience one of Ireland's most exciting sports.</p>
-            <img src="images/hurling.jpg" alt="Hurling Game">
+            <h2 data-lang="en">Hurling</h2>
+            <h2 data-lang="de" style="display: none;">Hurling</h2>
+            <p data-lang="en">Hurling is an ancient Gaelic sport, often described as a mix of lacrosse and field hockey. It’s fast-paced and played with a wooden stick called a hurley and a small ball called a sliotar. The game you’ll be attending at Parnell Park will showcase the skill and speed of this traditional Irish sport.</p>
+            <p data-lang="en">16:30 - 18:00 - Whitehall Colmcille vs. St. Judes @ Parnell Park</p>
+            <p data-lang="de" style="display: none;">Hurling ist ein alter gälischer Sport, der oft als Mischung aus Lacrosse und Feldhockey beschrieben wird. Es ist schnell und wird mit einem Holzschläger namens Hurley und einem kleinen Ball namens Sliotar gespielt. Das Spiel, das Sie im Parnell Park besuchen werden, zeigt die Geschicklichkeit und Geschwindigkeit dieses traditionellen irischen Sports.</p>
+            <p data-lang="de">16:30 - 18:00 - Whitehall Colmcille vs. St. Judes @ Parnell Park</p>
+            <img width=75% src="images/hurling.jpg" alt="Hurling Game">
         </section>
         <section id="weather" class="container">
-            <h2>Weather</h2>
-            <p>During our trip from 13.9.24 to 16.9.24, we can expect mild temperatures ranging from 10°C to 18°C. The weather is likely to be partly cloudy with occasional showers, so packing a light raincoat is advisable.</p>
-            <img src="images/weather.jpg" alt="Weather Forecast">
-        </section>
-        <section id="documents" class="container">
-            <h2>Necessary Documents</h2>
-            <p>Travelers from Switzerland to Dublin need a valid passport or national ID card. Ensure your documents are up to date before the trip.</p>
-            <img src="images/documents.jpg" alt="Travel Documents">
+            <h2 data-lang="en">Weather</h2>
+            <h2 data-lang="de" style="display: none;">Wetter</h2>
+            <p data-lang="en">During our trip from 13.9.24 to 16.9.24, we can expect mild temperatures ranging from 10°C to 19°C. The weather is likely to be partly cloudy with occasional showers, so packing a light raincoat is advisable.</p>
+            <p data-lang="de" style="display: none;">Während unserer Reise vom 13.9.24 bis 16.9.24 können wir milde Temperaturen zwischen 10°C und 19°C erwarten. Das Wetter wird voraussichtlich teilweise bewölkt mit gelegentlichen Schauern sein, daher ist es ratsam, eine leichte Regenjacke einzupacken.</p>
+            <img src="images/weather.png" alt="Weather Forecast">
         </section>
         <section id="flights" class="container">
-            <h2>Flight Details</h2>
-            <p>We will fly with Swiss airline. Flight LX400 departs at 10:50 from Zürich (ZHR) to Dublin, and flight LX401 departs at 13:00 from Dublin back to Zürich. We will meet on the SBB train from Bern to Zürich Flughafen, departing Bern at 8:02.</p>
-            <img src="images/flight.jpg" alt="Flight Details">
+            <h2 data-lang="en">Getting there</h2>
+            <h2 data-lang="de" style="display: none;">Anreise</h2>
+            <p data-lang="en">Travelers from Switzerland to Dublin need a <a href="https://www.irishimmigration.ie/at-the-border/entry-for-eu-eea-and-swiss-citizens/">passport or national ID card</a>. Ensure your documents are up to date before the trip.</p>
+            <p data-lang="de" style="display: none;">Reisende von der Schweiz nach Dublin benötigen <a href="https://www.irishimmigration.ie/at-the-border/entry-for-eu-eea-and-swiss-citizens/">einen gültigen Reisepass oder Personalausweis</a>. Stellen Sie sicher, dass Ihre Dokumente vor der Reise auf dem neuesten Stand sind.</p>
+            <p data-lang="en">We will fly with Swiss airline. Flight LX400 departs at 10:50 from Zürich (ZHR) to Dublin, and flight LX401 departs at 13:00 from Dublin back to Zürich. We will meet on the SBB train from Bern to Zürich Flughafen, departing Bern at 8:02.</p>
+            <p data-lang="de" style="display: none;">Wir fliegen mit der Swiss Airline. Flug LX400 startet um 10:50 Uhr von Zürich (ZHR) nach Dublin, und Flug LX401 startet um 13:00 Uhr von Dublin zurück nach Zürich. Wir treffen uns im SBB-Zug von Bern nach Zürich Flughafen, Abfahrt in Bern um 8:02 Uhr.</p>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Mode of Transport</th>
+                    <th>Departure Time</th>
+                    <th>Arrival Time</th>
+                </tr>
+                <tr>
+                    <td>Sep 13</td>
+                    <td>Bern</td>
+                    <td>Zürich Flughafen</td>
+                    <td>Train</td>
+                    <td>08:02</td>
+                    <td>09:28</td>
+                </tr>
+                <tr>
+                    <td>Sep 13</td>
+                    <td>Zürich (ZHR)</td>
+                    <td>Dublin (DUB)</td>
+                    <td>Flight LX400</td>
+                    <td>10:50</td>
+                    <td>12:30</td>
+                </tr>
+                <tr>
+                    <td>Sep 16</td>
+                    <td>Dublin (DUB)</td>
+                    <td>Zürich (ZHR)</td>
+                    <td>Flight LX401</td>
+                    <td>13:00</td>
+                    <td>16:30</td>
+                </tr>
+                <tr>
+                    <td>Sep 16</td>
+                    <td>Zürich Flughafen</td>
+                    <td>Bern</td>
+                    <td>Train</td>
+                    <td>17:02</td>
+                    <td>18:28</td>
+                </tr>
+            </table>
         </section>
         <section id="accommodation" class="container">
-            <h2>Accommodation</h2>
-            <p>We will stay at the Grand Canal Square Apartments. The apartments are centrally located, offering easy access to Dublin's attractions. From the airport, we can take a taxi or public transport to reach the apartments.</p>
-            <img src="images/accommodation.jpg" alt="Grand Canal Square Apartments">
-        </section>
+            <h2 data-lang="en">Accommodation</h2>
+            <h2 data-lang="de" style="display: none;">Unterkunft</h2>
+            <p data-lang="en">We will stay at the Grand Canal Square Apartments. The apartments are centrally located, offering easy access to Dublin's attractions.</p>
+            <p data-lang="en">Just in case: Phone number owner Grand Canal Square Apartments +353 1 443 3920.</p>
+            <p data-lang="en">We need to collect the keys at the Repeption in the main office: 168 Granby Place Dublin 1, D01 VP96. Check-In is from 15:30 onwards. Check out time is 10:30 am on the moring of departure.</p>
+            <p data-lang="de" style="display: none;">Wir werden in den Grand Canal Square Appartment übernachten. Das Apartment befindet sich in der Nähe des berühmten Temple Bar districts.</p>
+            <p data-lang="de" style="display: none;">Für den Fall der Fälle: Telefonnummer Vermieter Grand Canal Square Apartments +353 1 443 3920. Der Check-In ist ab 15:30 Uhr möglich. Check-out-Zeit ist 10:30 Uhr am Morgen der Abreise.</p>
+            <p data-lang="de" style="display: none;">Wir müssen die Schlüssel an der Repeption im Hauptbüro abholen: 168 Granby Place Dublin 1, D01 VP96. Check-out-Zeit ist 10:30 Uhr am Morgen der Abreise.</p>
+            <img src="images/apartment.png" alt="Map of apartment">
         <section id="money" class="container">
-            <h2>Money</h2>
-            <p>The current conversion rate is 1 CHF = 1.07 EUR. In Dublin, a pint of beer costs around €6, while in Bern, it costs approximately CHF 7.50. Make sure to carry some cash for small purchases.</p>
-            <img src="images/money.jpg" alt="Currency Exchange">
+            <h2 data-lang="en">Money</h2>
+            <h2 data-lang="de" style="display: none;">Kohle</h2>
+            <p data-lang="en">The current conversion rate is 1 CHF = 1.07 EUR. Credit and debit cards are widely accepted. In Dublin, a pint of beer costs around €6, while in Bern, it costs approximately CHF 7.50.</p>
+            <p data-lang="en">Tip. There is no mandatory tipping culture in Ireland. People usually don't tip for many services, except in restaurants with table service or in cafes (depending on the service). Some restaurants already add a "service charge" of 10-12.5% to the bill.</p>
+            <p data-lang="de" style="display: none;">Der aktuelle Umrechnungskurs beträgt 1 CHF = 1,07 EUR. Kredit- und Debitkarten werden weitgehend akzeptiert. In Dublin kostet ein Pint Bier rund 6 Euro, in Bern etwa 7.50 Franken.</p>
+            <p data-lang="de" style="display: none;">Trinkgeld. In Irland gibt es keine obligatorische Trinkgeldkultur. Die Menschen geben für viele Dienstleistungen in der Regel kein Trinkgeld, ausser in Restaurants mit Tisch-Service oder in Cafés (abhängig vom Service). Einige Restaurants setzen bereits eine “Service Charge” von 10-12,5 % auf die Rechnung.</p>
+            <p></p>
         </section>
     </main>
     <footer>
         <div class="container">
             <p>© 2024 Rüegg Reisen</p>
+        </div>
+        <div class="nav-right">
+            <select id="language-selector" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+            </select>
         </div>
     </footer>
 </body>

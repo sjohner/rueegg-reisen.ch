@@ -5,79 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rüegg Reisen</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <nav>
         <div class="container">
             <div class="nav-left">
                 <img src="images/logo.png" alt="Rüegg Reisen Logo" class="logo">
-                <h1>Rüegg Reisen</h1>
+                <h1 data-lang="en">Rüegg Reisen</h1>
+                <h1 data-lang="de" style="display: none;">Rüegg Reisen</h1>
+                <ul class="menu">
+                    <li><a href="#next-trip" data-lang="en">Next Trip</a><a href="#next-trip" data-lang="de" style="display: none;">Nächste Reise</a></li>
+                    <li><a href="#past-trips" data-lang="en">Past Trips</a><a href="#past-trips" data-lang="de" style="display: none;">Vergangene Reisen</a></li>
+                    <li><a href="#testimonials" data-lang="en">Testimonials</a><a href="#testimonials" data-lang="de" style="display: none;">Erfahrungsberichte</a></li>
+                </ul>
             </div>
-            <ul class="menu">
-                <li><a href="#next-trip">Next Trip</a></li>
-                <li><a href="#past-trips">Past Trips</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-            </ul>
         </div>
     </nav>
     <main>
         <section id="next-trip" class="container">
-            <h2>Next Journey: City Trip to Dublin</h2>
+            <h2 data-lang="en">Next Journey: City Trip to Dublin</h2>
+            <h2 data-lang="de" style="display: none;">Nächste Reise: Städtereise nach Dublin</h2>
             <div class="trip-image-container">
                 <img src="images/dublin.jpg" alt="Dublin Trip">
             </div>
-            <p>Join us from 13.9. until 16.9.24 for an unforgettable adventure in Dublin!</p>
-            <a href="dublin.html" class="more-info">More Information</a>
+            <p data-lang="en">Join us from 13.9. until 16.9.24 for an unforgettable adventure in Dublin!</p>
+            <p data-lang="de" style="display: none;">Begleiten Sie uns vom 13.9. bis 16.9.24 auf ein unvergessliches Abenteuer in Dublin!</p>
+            <a href="dublin.html" class="more-info" data-lang="en">More Information</a>
+            <a href="dublin.html" class="more-info" data-lang="de" style="display: none;">Mehr Informationen</a>
         </section>
         <section id="past-trips" class="full-width-section">
             <div class="container">
-                <h2>Past Trips</h2>
+                <h2 data-lang="en">Past Trips</h2>
+                <h2 data-lang="de" style="display: none;">Vergangene Reisen</h2>
                 <div class="past-trips-grid">
                     <div class="trip">
-                        <p class="adventure-text">Always up for an adventure</p>
+                        <p data-lang="en">Reisearten - Die grenzenlose Vielfalt des Reisens – bei Rüegg Reisen werden Ihre Ferienträume wahr. Lassen Sie sich inspirieren.</p>
+                        <p data-lang="de" style="display: none;">Reisearten - Die grenzenlose Vielfalt des Reisens – bei Rüegg Reisen werden Ihre Ferienträume wahr. Lassen Sie sich inspirieren.</p>
                     </div>
                     <div class="trip">
                         <img src="images/prague.jpg" alt="City Trip to Prague">
-                        <p>City Trip to Prague</p>
+                        <p data-lang="en">City Trip to Prague</p>
+                        <p data-lang="de" style="display: none;">Städtereise nach Prag</p>
                     </div>
                     <div class="trip">
                         <img src="images/antwerp.jpg" alt="City Trip to Antwerp">
-                        <p>City Trip to Antwerp</p>
+                        <p data-lang="en">City Trip to Antwerp</p>
+                        <p data-lang="de" style="display: none;">Städtereise nach Antwerpen</p>
                     </div>
                     <div class="trip">
                         <img src="images/austria.jpg" alt="Mountain Biking in Austria">
-                        <p>Mountain Biking in Austria</p>
+                        <p data-lang="en">Mountain Biking in Austria</p>
+                        <p data-lang="de" style="display: none;">Mountainbiken in Österreich</p>
                     </div>
                     <div class="trip">
                         <img src="images/finale-ligure.jpg" alt="Mountain Biking in Finale Ligure, Italy">
-                        <p>Mountain Biking in Finale Ligure, Italy</p>
+                        <p data-lang="en">Mountain Biking in Finale Ligure, Italy</p>
+                        <p data-lang="de" style="display: none;">Mountainbiken in Finale Ligure, Italien</p>
+                    </div>
+                    <div class="trip">
+                        <img src="images/bern.jpg" alt="City Trip to Bern">
+                        <p data-lang="en">City Trip to Bern</p>
+                        <p data-lang="de" style="display: none;">Städtereise nach Bern</p>
                     </div>
                 </div>
             </div>
         </section>
         <section id="testimonials" class="container white-background">
-            <h2>Testimonials</h2>
+            <h2 data-lang="en">Testimonials</h2>
+            <h2 data-lang="de" style="display: none;">Erfahrungsberichte</h2>
             <div class="testimonials-grid">
                 <div class="testimonial">
                     <img src="images/anna.jpg" alt="Anna's testimonial">
-                    <p>"The trip to Prague was amazing! Highly recommend Rüegg Reisen." - Anna</p>
+                    <p data-lang="en">"The trip to Prague was amazing! Highly recommend Rüegg Reisen." - Anna</p>
+                    <p data-lang="de" style="display: none;">"Die Reise nach Prag war fantastisch! Sehr empfehlenswert." - Anna</p>
                 </div>
                 <div class="testimonial">
                     <img src="images/mark.jpg" alt="Mark's testimonial">
-                    <p>"Mountain biking in Austria was an adventure of a lifetime!" - Mark</p>
+                    <p data-lang="en">"Mountain biking in Austria was an adventure of a lifetime!" - Mark</p>
+                    <p data-lang="de" style="display: none;">"Mountainbiken in Österreich war ein Abenteuer fürs Leben!" - Mark</p>
                 </div>
                 <div class="testimonial">
                     <img src="images/julia.jpg" alt="Julia's testimonial">
-                    <p>"Antwerp was beautiful and the trip was perfectly organized!" - Julia</p>
+                    <p data-lang="en">"Antwerp was beautiful and the trip was perfectly organized!" - Julia</p>
+                    <p data-lang="de" style="display: none;">"Antwerpen war wunderschön und die Reise war perfekt organisiert!" - Julia</p>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="container">
+        <div class="nav-left">
             <p>© 2024 Rüegg Reisen</p>
         </div>
+        <div class="nav-right">
+            <select id="language-selector" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+            </select>
+        </div>
     </footer>
-    <script src="scripts.js"></script>
 </body>
 </html>

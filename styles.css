@@ -5,10 +5,12 @@ body {
     background-color: #fff;
     color: #333;
     text-align: center;
+    font-size: 1.3vw;
 }
 
 .container {
     width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -41,7 +43,12 @@ nav .logo {
 
 nav h1 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 3vw;
+}
+
+nav .nav-right {
+    display: flex;
+    align-items: center;
 }
 
 nav .menu {
@@ -58,11 +65,17 @@ nav .menu li {
 nav .menu a {
     color: #333;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.3vw;
 }
 
 nav .menu a:hover {
     text-decoration: underline;
+}
+
+#language-selector {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    font-size: 1.3vw;
 }
 
 main {
@@ -71,8 +84,9 @@ main {
 
 h2 {
     color: #333;
-    font-size: 2rem;
+    font-size: 2vw;
     margin-bottom: 1rem;
+    margin-top: 1rem
 }
 
 #next-trip {
@@ -80,6 +94,7 @@ h2 {
     margin: 1rem auto;
     padding: 1rem;
     width: 80%;
+    max-width: 1200px;
     position: relative;
 }
 
@@ -99,6 +114,15 @@ h2 {
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
+}
+
+
+.image-gallery {
+    float:left;
+    max-width: 49%;
+    max-height: 500px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .more-info {
@@ -165,8 +189,8 @@ h2 {
 .testimonial img {
     border-radius: 50%;
     margin-bottom: 1rem;
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
 }
 
 footer {
@@ -177,4 +201,27 @@ footer {
     position: relative;
     width: 100%;
     border-top: 1px solid #ddd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
 }

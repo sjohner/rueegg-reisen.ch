@@ -5,13 +5,14 @@ body {
     background-color: #fff;
     color: #333;
     text-align: center;
-    font-size: 1.3vw;
+    font-size: 2vh;
 }
 
 .container {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+    font-size: 2vh;
 }
 
 nav {
@@ -43,7 +44,7 @@ nav .logo {
 
 nav h1 {
     margin: 0;
-    font-size: 3vw;
+    font-size: 3vh;
 }
 
 nav .nav-right {
@@ -65,7 +66,7 @@ nav .menu li {
 nav .menu a {
     color: #333;
     text-decoration: none;
-    font-size: 1.3vw;
+    font-size: 2vh;
 }
 
 nav .menu a:hover {
@@ -75,7 +76,7 @@ nav .menu a:hover {
 #language-selector {
     margin-left: 1rem;
     padding: 0.5rem;
-    font-size: 1.3vw;
+    font-size: 2vh;
 }
 
 main {
@@ -84,7 +85,7 @@ main {
 
 h2 {
     color: #333;
-    font-size: 2vw;
+    font-size: 3vh;
     margin-bottom: 1rem;
     margin-top: 1rem
 }
@@ -154,6 +155,7 @@ h2 {
 .trip {
     width: 30%;
     margin-bottom: 1rem;
+    font-size: 2vh;
 }
 
 .trip img {
